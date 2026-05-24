@@ -6,26 +6,33 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Eye, ArrowLeftRight, Paintbrush, Compass, Layout } from "lucide-react";
 
+import bathroomBefore from "../assets/images/bathroom_before_1779433554549.png";
+import bathroomAfter from "../assets/images/bathroom_after_1779433572382.png";
+import kitchenBefore from "../assets/images/kitchen_before_1779434261785.png";
+import kitchenAfter from "../assets/images/kitchen_after_1779434281017.png";
+import livingBefore from "../assets/images/living_before_1779434219986.png";
+import livingAfter from "../assets/images/living_after_1779434242063.png";
+
 const PROJECT_ROOMS = [
   {
     id: "bathroom",
     label: "Spa Bathrooms",
-    before: "/src/assets/images/bathroom_before_1779433554549.png",
-    after: "/src/assets/images/bathroom_after_1779433572382.png",
+    before: bathroomBefore,
+    after: bathroomAfter,
     desc: "Bespoke stone cladding, Geberit concealed water closet, custom backlit mirror, and linear floor drains."
   },
   {
     id: "kitchen",
     label: "German Kitchens",
-    before: "/src/assets/images/kitchen_before_1779434261785.png",
-    after: "/src/assets/images/kitchen_after_1779434281017.png",
+    before: kitchenBefore,
+    after: kitchenAfter,
     desc: "Seamless handle-less matte cabinetry, premium Calacatta waterfall quartz island, and Gaggenau integrations."
   },
   {
     id: "living",
     label: "Emaar Living Rooms",
-    before: "/src/assets/images/living_before_1779434219986.png",
-    after: "/src/assets/images/living_after_1779434242063.png",
+    before: livingBefore,
+    after: livingAfter,
     desc: "Light-filled bespoke wood wall paneling, Italian travertine tiles, and modern indirect home lighting profile layout."
   }
 ];

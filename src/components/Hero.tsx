@@ -6,9 +6,9 @@
 import React from "react";
 import { motion } from "motion/react";
 import { Calendar, ArrowUpRight, Award, ShieldCheck, Check, Compass } from "lucide-react";
+import heroImg from "../assets/images/living_after_1779434242063.png";
 
 export default function Hero() {
-  const heroImg = "/src/assets/images/living_after_1779434242063.png";
 
   return (
     <section id="hero" className="relative min-h-screen pt-28 pb-16 flex items-center overflow-hidden bg-brand-sand-100/15">
