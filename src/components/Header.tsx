@@ -7,6 +7,12 @@ import React, { useState, useEffect } from "react";
 import Logo from "./Logo";
 import { Phone, MessageSquareCode, Menu, X, Check } from "lucide-react";
 
+// ─── Contact constants ────────────────────────────────────────────────────────
+const CALL_NUMBER_DISPLAY = "058 658 0254";
+const CALL_NUMBER_HREF    = "0586580254";
+const WHATSAPP_NUMBER     = "971563731162";
+// ─────────────────────────────────────────────────────────────────────────────
+
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -61,11 +67,11 @@ export default function Header() {
         {/* Right CTA links */}
         <div className="hidden sm:flex items-center gap-4">
           <a
-            href="tel:0561014935"
+            href={`tel:${CALL_NUMBER_HREF}`}
             className="flex items-center gap-2 font-mono text-[13px] font-bold text-brand-charcoal-800/80 hover:text-brand-gold-600 transition-colors px-3 py-1.5 rounded-lg hover:bg-brand-sand-100"
           >
             <Phone className="w-4 h-4 text-brand-gold-500" />
-            056 101 4935
+            {CALL_NUMBER_DISPLAY}
           </a>
           <a
             href="#quote-consultation"
@@ -78,7 +84,7 @@ export default function Header() {
         {/* Mobile Toggle Trigger */}
         <div className="flex items-center md:hidden gap-2">
           <a
-            href="tel:0561014935"
+            href={`tel:${CALL_NUMBER_HREF}`}
             className="w-9 h-9 bg-brand-sand-100 border border-brand-sand-200 rounded-lg flex items-center justify-center text-brand-charcoal-800 shrink-0"
           >
             <Phone className="w-4 h-4" />
@@ -109,14 +115,27 @@ export default function Header() {
               </a>
             ))}
             <div className="pt-4 flex flex-col gap-3">
+              {/* Call button */}
               <a
-                href="tel:0561014935"
+                href={`tel:${CALL_NUMBER_HREF}`}
                 onClick={handleNavClick}
                 className="flex items-center justify-center gap-3 bg-brand-sand-100 font-mono text-sm font-bold py-3.5 px-4 rounded-xl text-brand-charcoal-800 border border-brand-sand-200"
               >
                 <Phone className="w-4 h-4 text-brand-gold-500" />
-                Call Hotline: 056 101 4935
+                Call: {CALL_NUMBER_DISPLAY}
               </a>
+              {/* WhatsApp button */}
+              <a
+                href={`https://wa.me/${WHATSAPP_NUMBER}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={handleNavClick}
+                className="flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 font-mono text-sm font-bold py-3.5 px-4 rounded-xl text-white transition-colors"
+              >
+                <MessageSquareCode className="w-4 h-4" />
+                WhatsApp: 056 373 1162
+              </a>
+              {/* Free quote */}
               <a
                 href="#quote-consultation"
                 onClick={handleNavClick}
