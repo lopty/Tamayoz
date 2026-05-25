@@ -1,13 +1,214 @@
 <!doctype html>
-<html lang="en">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
+
+    <!-- ═══════════════════════════════════════════
+         PRIMARY SEO — TITLE & META DESCRIPTION
+         Keep title under 60 chars, description under 160 chars
+    ═══════════════════════════════════════════ -->
+    <title>تعبير التميز | Tabeer Al Tamayoz – Excellence in Every Expression</title>
+    <meta name="description" content="تعبير التميز – شريككم في التميز والإبداع في الإمارات العربية المتحدة. Tabeer Al Tamayoz: your UAE partner for excellence, creativity, and distinction. Dubai, Abu Dhabi, UAE." />
+
+    <!-- ═══════════════════════════════════════════
+         CANONICAL — Prevents duplicate content issues
+    ═══════════════════════════════════════════ -->
+    <link rel="canonical" href="https://tabeeraltamayoz.com/" />
+
+    <!-- ═══════════════════════════════════════════
+         KEYWORDS (supporting signal, not primary ranking)
+    ═══════════════════════════════════════════ -->
+    <meta name="keywords" content="تعبير التميز, Tabeer Al Tamayoz, تميز, إبداع, الإمارات, دبي, excellence UAE, creative Dubai, distinction, UAE brand" />
+
+    <!-- ═══════════════════════════════════════════
+         ROBOTS — Tell crawlers what to index
+    ═══════════════════════════════════════════ -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+
+    <!-- ═══════════════════════════════════════════
+         AUTHORSHIP & GEO TARGETING
+    ═══════════════════════════════════════════ -->
+    <meta name="author" content="تعبير التميز – Tabeer Al Tamayoz" />
+    <meta name="geo.region" content="AE-DU" />
+    <meta name="geo.placename" content="Dubai, United Arab Emirates" />
+    <meta name="geo.position" content="25.2048;55.2708" />
+    <meta name="ICBM" content="25.2048, 55.2708" />
+    <meta name="language" content="Arabic, English" />
+
+    <!-- ═══════════════════════════════════════════
+         OPEN GRAPH — Facebook, LinkedIn, WhatsApp previews
+    ═══════════════════════════════════════════ -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tabeeraltamayoz.com/" />
+    <meta property="og:site_name" content="تعبير التميز | Tabeer Al Tamayoz" />
+    <meta property="og:title" content="تعبير التميز | Tabeer Al Tamayoz – Excellence in Every Expression" />
+    <meta property="og:description" content="تعبير التميز – شريككم في التميز والإبداع في الإمارات العربية المتحدة. Your UAE partner for excellence, creativity, and distinction." />
+    <meta property="og:image" content="https://tabeeraltamayoz.com/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="تعبير التميز – Tabeer Al Tamayoz" />
+    <meta property="og:locale" content="ar_AE" />
+    <meta property="og:locale:alternate" content="en_AE" />
+
+    <!-- ═══════════════════════════════════════════
+         TWITTER / X CARD
+    ═══════════════════════════════════════════ -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@tabeeraltamayoz" />
+    <meta name="twitter:title" content="تعبير التميز | Tabeer Al Tamayoz" />
+    <meta name="twitter:description" content="شريككم في التميز والإبداع في الإمارات. Your UAE partner for excellence and distinction." />
+    <meta name="twitter:image" content="https://tabeeraltamayoz.com/og-image.jpg" />
+    <meta name="twitter:image:alt" content="تعبير التميز – Tabeer Al Tamayoz" />
+
+    <!-- ═══════════════════════════════════════════
+         HREFLANG — Bilingual Arabic / English targeting
+         Tells Google which language version to serve to which audience
+    ═══════════════════════════════════════════ -->
+    <link rel="alternate" hreflang="ar-ae" href="https://tabeeraltamayoz.com/" />
+    <link rel="alternate" hreflang="ar" href="https://tabeeraltamayoz.com/" />
+    <link rel="alternate" hreflang="en-ae" href="https://tabeeraltamayoz.com/en/" />
+    <link rel="alternate" hreflang="en" href="https://tabeeraltamayoz.com/en/" />
+    <link rel="alternate" hreflang="x-default" href="https://tabeeraltamayoz.com/" />
+
+    <!-- ═══════════════════════════════════════════
+         FAVICONS — Full set for all devices
+    ═══════════════════════════════════════════ -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#1a1a2e" />
+    <meta name="msapplication-TileColor" content="#1a1a2e" />
+
+    <!-- ═══════════════════════════════════════════
+         PERFORMANCE — Preconnect to critical origins
+    ═══════════════════════════════════════════ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+
+    <!-- ═══════════════════════════════════════════
+         STRUCTURED DATA (JSON-LD)
+         Schema.org — the primary trust signal for AI & Google
+         Add the Organization + WebSite + Breadcrumb schemas
+    ═══════════════════════════════════════════ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://tabeeraltamayoz.com/#organization",
+      "name": "تعبير التميز",
+      "alternateName": ["Tabeer Al Tamayoz", "Tabeer AlTamayoz"],
+      "description": "تعبير التميز – شريككم في التميز والإبداع في الإمارات العربية المتحدة.",
+      "url": "https://tabeeraltamayoz.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tabeeraltamayoz.com/logo.png",
+        "width": 400,
+        "height": 400
+      },
+      "image": "https://tabeeraltamayoz.com/og-image.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Dubai",
+        "addressRegion": "Dubai",
+        "addressCountry": "AE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 25.2048,
+        "longitude": 55.2708
+      },
+      "areaServed": [
+        { "@type": "Country", "name": "United Arab Emirates" },
+        { "@type": "City", "name": "Dubai" },
+        { "@type": "City", "name": "Abu Dhabi" },
+        { "@type": "City", "name": "Sharjah" }
+      ],
+      "availableLanguage": [
+        { "@type": "Language", "name": "Arabic", "alternateName": "ar" },
+        { "@type": "Language", "name": "English", "alternateName": "en" }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/tabeeraltamayoz",
+        "https://www.linkedin.com/company/tabeeraltamayoz",
+        "https://twitter.com/tabeeraltamayoz",
+        "https://www.facebook.com/tabeeraltamayoz"
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://tabeeraltamayoz.com/#website",
+      "url": "https://tabeeraltamayoz.com/",
+      "name": "تعبير التميز | Tabeer Al Tamayoz",
+      "description": "Excellence in Every Expression – UAE",
+      "publisher": {
+        "@id": "https://tabeeraltamayoz.com/#organization"
+      },
+      "inLanguage": ["ar", "en"],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://tabeeraltamayoz.com/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://tabeeraltamayoz.com/#webpage",
+      "url": "https://tabeeraltamayoz.com/",
+      "name": "تعبير التميز | Tabeer Al Tamayoz – Excellence in Every Expression",
+      "isPartOf": { "@id": "https://tabeeraltamayoz.com/#website" },
+      "about": { "@id": "https://tabeeraltamayoz.com/#organization" },
+      "description": "الصفحة الرئيسية لتعبير التميز – شريككم في الإبداع والتميز في الإمارات.",
+      "inLanguage": "ar",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "الرئيسية | Home",
+            "item": "https://tabeeraltamayoz.com/"
+          }
+        ]
+      },
+      "datePublished": "2025-01-01",
+      "dateModified": "2026-05-25"
+    }
+    </script>
+
+    <!-- ═══════════════════════════════════════════
+         GOOGLE TAG MANAGER — Replace GTM-XXXXXXX with real ID
+    ═══════════════════════════════════════════ -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+
   </head>
   <body>
+
+    <!-- GTM noscript fallback — place immediately after <body> -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
-
