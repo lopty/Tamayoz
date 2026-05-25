@@ -1,0 +1,23 @@
+# robots.txt — tabeeraltamayoz.com
+# Tabeer Al Tamayoz Technical Services LLC
+# Last updated: 2026-05-25
+
+User-agent: *
+Allow: /
+
+# Block dev/admin/API paths
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_/
+Disallow: /src/
+
+# Allow Google's image crawler (critical for renovation portfolio)
+User-agent: Googlebot-Image
+Allow: /
+
+# Allow Googlebot explicitly
+User-agent: Googlebot
+Allow: /
+
+# Sitemap — create and submit to Google Search Console
+Sitemap: https://tabeeraltamayoz.com/sitemap.xml
