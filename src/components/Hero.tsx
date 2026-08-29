@@ -6,7 +6,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import { Calendar, ArrowUpRight, Award, ShieldCheck, Check, Compass } from "lucide-react";
-import heroImg from "../assets/images/living_after_1779434242063.png";
+import heroImg from "../assets/images/Screenshot_9.png";
 
 export default function Hero() {
 
@@ -98,7 +98,7 @@ export default function Hero() {
             <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3]">
               <img
                 src={heroImg}
-                alt="Tabeer Al Tamayoz renovated premium Dubai home living interior design"
+                alt="KOF renovated premium Dubai home living interior design"
                 className="w-full h-full object-cover transform hover:scale-102 transition-transform duration-700"
                 referrerPolicy="no-referrer"
               />

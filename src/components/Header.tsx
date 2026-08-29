@@ -28,7 +28,8 @@ export default function Header() {
   const navItems = [
     { label: "Transformation", href: "#before-after" },
     { label: "Services", href: "#services" },
-    { label: "Why Tabeer", href: "#why-tabeer" },
+    { label: "Our Work", href: "#previous-works" },
+    { label: "Why KOF", href: "#why-tabeer" },
     { label: "Cost Estimator", href: "#estimator" },
   ];
 

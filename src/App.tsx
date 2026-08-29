@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import BeforeAfterSlider from "./components/BeforeAfterSlider";
 import ServicesGrid from "./components/ServicesGrid";
+import PreviousWorks from "./components/PreviousWorks";
 import CostEstimator from "./components/CostEstimator";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
@@ -89,7 +90,7 @@ export default function App() {
                     </div>
                     <div>
                       <strong className="text-sm font-bold text-brand-charcoal-800 block uppercase tracking-wide">
-                        Tabeer Executive Standard
+                        KOF Executive Standard
                       </strong>
                       <span className="text-xs text-brand-sand-600 font-medium">
                         Sleek handle-less wood joinery, seamless stone and travertine cladding, custom linear details, and ambient lighting layouts.
@@ -124,7 +125,25 @@ export default function App() {
           </div>
         </section>
 
-        {/* 5. WHY TABEER CORE STRENGTHS */}
+        {/* 5. PREVIOUS WORKS GALLERY */}
+        <section id="previous-works" className="py-20 sm:py-24 bg-white border-y border-brand-sand-200/40">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-2xl mx-auto space-y-3 mb-16">
+              <span className="font-mono text-xs uppercase tracking-widest text-brand-gold-600 font-bold block">
+                Real Project Documentation
+              </span>
+              <h2 className="font-display text-3xl sm:text-4xl font-extrabold tracking-tight text-brand-charcoal-800 leading-none uppercase">
+                Previous Works
+              </h2>
+              <p className="font-sans text-sm sm:text-base text-brand-sand-600 leading-relaxed">
+                Straight from our own projects — completed finishes and our engineers on active sites across Dubai.
+              </p>
+            </div>
+            <PreviousWorks />
+          </div>
+        </section>
+
+        {/* 6. WHY KOF CORE STRENGTHS */}
         <section id="why-tabeer" className="py-20 sm:py-24 bg-brand-charcoal-800 text-white relative overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center max-w-2xl mx-auto space-y-3 mb-16">
@@ -132,7 +151,7 @@ export default function App() {
                 Dubai Premium Benchmarks
               </span>
               <h2 className="font-display text-2xl sm:text-4xl font-extrabold tracking-tight text-white leading-none uppercase">
-                Why Property Owners Choose Tabeer
+                Why Property Owners Choose KOF
               </h2>
               <p className="font-sans text-xs sm:text-sm text-brand-sand-300">
                 We bridge high-end architectural aesthetics with certified structural execution. No guesswork, no subcontracting.
@@ -179,14 +198,14 @@ export default function App() {
           </div>
         </section>
 
-        {/* 6. CALCULATOR ESTIMATIONS INDEX */}
+        {/* 7. CALCULATOR ESTIMATIONS INDEX */}
         <section id="estimator" className="py-20 sm:py-24 bg-white border-b border-brand-sand-200/40">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <CostEstimator onSelectEstimate={handleEstimateSelect} />
           </div>
         </section>
 
-        {/* 7. DETAILED CLIENT INQUIRY FORM */}
+        {/* 8. DETAILED CLIENT INQUIRY FORM */}
         <section id="consultation" className="py-20 sm:py-24 bg-brand-sand-100/10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ContactForm
@@ -198,7 +217,7 @@ export default function App() {
         </section>
       </main>
 
-      {/* 8. MASTER BOTTOM BRAND FOOTER PANEL */}
+      {/* 9. MASTER BOTTOM BRAND FOOTER PANEL */}
       <Footer />
     </div>
   );

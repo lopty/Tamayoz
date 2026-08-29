@@ -1,5 +1,5 @@
-# robots.txt — tabeeraltamayoz.com
-# Tabeer Al Tamayoz Technical Services LLC
+# robots.txt — koftechnicalservices.com
+# KOF Technical Services LLC
 # Last updated: 2026-05-25
 
 User-agent: *
@@ -20,4 +20,4 @@ User-agent: Googlebot
 Allow: /
 
 # Sitemap — create and submit to Google Search Console
-Sitemap: https://tabeeraltamayoz.com/sitemap.xml
+Sitemap: https://koftechnicalservices.com/sitemap.xml

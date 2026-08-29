@@ -14,7 +14,7 @@ const CALL_NUMBER_2_DISPLAY = "056 101 4935";
 const CALL_NUMBER_2_HREF    = "0561014935";
 const WHATSAPP_NUMBER       = "971563731162";
 const WHATSAPP_DISPLAY      = "056 373 1162";
-const CONTACT_EMAIL         = "contact@tabeeraltamayoz.com";
+const CONTACT_EMAIL         = "contact@koftechnicalservices.com";
 // ─────────────────────────────────────────────────────────────────────────────
 
 export default function Footer() {
@@ -33,7 +33,7 @@ export default function Footer() {
               <Logo variant="light" showText={true} className="scale-95 origin-left" />
             </div>
             <p className="text-xs sm:text-sm text-brand-sand-300 leading-relaxed max-w-sm">
-              Tabeer Al Tamayoz Technical Services LLC is a premier licensed contractor based in Al Barsha, Dubai. We specialize in luxury residential makeovers, elegant German kitchen fitouts, bespoke joinery, and premium stonemasonry.
+              KOF Technical Services LLC is a premier licensed contractor based in Al Barsha, Dubai. We specialize in luxury residential makeovers, elegant German kitchen fitouts, bespoke joinery, and premium stonemasonry.
             </p>
             <div className="flex items-center gap-3">
               <span className="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse" />
@@ -57,6 +57,9 @@ export default function Footer() {
               </a>
               <a href="#services" className="font-sans text-xs text-brand-sand-300 hover:text-brand-gold-400 transition-colors">
                 Renovation Services
+              </a>
+              <a href="#previous-works" className="font-sans text-xs text-brand-sand-300 hover:text-brand-gold-400 transition-colors">
+                Previous Works
               </a>
               <a href="#why-tabeer" className="font-sans text-xs text-brand-sand-300 hover:text-brand-gold-400 transition-colors">
                 Corporate Core Strengths
@@ -165,7 +168,7 @@ export default function Footer() {
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="text-center sm:text-left space-y-1">
             <p className="font-sans text-[11px] text-brand-sand-400">
-              © {new Date().getFullYear()} Tabeer Al Tamayoz Technical Services LLC. All Rights Reserved.
+              © {new Date().getFullYear()} KOF Technical Services LLC. All Rights Reserved.
             </p>
             <p className="font-sans text-[10px] text-brand-sand-500">
               Luxury Architectural Fitout Standards, Al Barsha, Dubai. Registered Licensed Entity.

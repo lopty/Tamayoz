@@ -11,7 +11,7 @@ import { Phone, Mail, MapPin, Send, MessageSquareCode, CheckCircle2, RefreshCw }
 const WHATSAPP_NUMBER = "971563731162"; // WhatsApp line
 const CALL_NUMBER_1   = "0586580254";   // Primary call
 const CALL_NUMBER_2   = "0561014935";   // Secondary call
-const CONTACT_EMAIL   = "contact@tabeeraltamayoz.com";
+const CONTACT_EMAIL   = "contact@koftechnicalservices.com";
 // ─────────────────────────────────────────────────────────────────────────────
 
 interface ContactFormProps {
@@ -55,7 +55,7 @@ export default function ContactForm({
 
     const text = forSubmit
       ? [
-          `🏠 *NEW RENOVATION ENQUIRY — Tabeer Al Tamayoz*`,
+          `🏠 *NEW RENOVATION ENQUIRY — KOF*`,
           ``,
           `👤 *Client Name:* ${name}`,
           `📱 *Mobile:* ${phone}`,
@@ -73,7 +73,7 @@ export default function ContactForm({
           `─────────────────────────`,
           `Please arrange a physical site inspection and exact measurement. Thank you!`,
         ].join("\n")
-      : `Hello Tabeer Al Tamayoz. I am interested in your renovation services. Please get in touch. Name: ${name || "Customer"}, Phone: ${phone || "TBC"}.`;
+      : `Hello KOF. I am interested in your renovation services. Please get in touch. Name: ${name || "Customer"}, Phone: ${phone || "TBC"}.`;
 
     return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
   };

@@ -8,12 +8,19 @@ import { Eye, ArrowLeftRight, Paintbrush, Compass, Layout } from "lucide-react";
 
 import bathroomBefore from "../assets/images/bathroom_before_1779433554549.png";
 import bathroomAfter from "../assets/images/bathroom_after_1779433572382.png";
-import kitchenBefore from "../assets/images/kitchen_before_1779434261785.png";
-import kitchenAfter from "../assets/images/kitchen_after_1779434281017.png";
-import livingBefore from "../assets/images/living_before_1779434219986.png";
-import livingAfter from "../assets/images/living_after_1779434242063.png";
+import kitchenBefore from "../assets/images/before.png";
+import kitchenAfter from "../assets/images/after.png";
+import livingBefore from "../assets/images/living room before.png";
+import livingAfter from "../assets/images/living room after.png";
 
 const PROJECT_ROOMS = [
+  {
+    id: "living",
+    label: "Living Rooms",
+    before: livingBefore,
+    after: livingAfter,
+    desc: "Backlit stone accents, bespoke wood slat paneling, herringbone oak flooring, and framed glass partitions."
+  },
   {
     id: "bathroom",
     label: "Spa Bathrooms",
@@ -26,19 +33,12 @@ const PROJECT_ROOMS = [
     label: "German Kitchens",
     before: kitchenBefore,
     after: kitchenAfter,
-    desc: "Seamless handle-less matte cabinetry, premium Calacatta waterfall quartz island, and Gaggenau integrations."
-  },
-  {
-    id: "living",
-    label: "Emaar Living Rooms",
-    before: livingBefore,
-    after: livingAfter,
-    desc: "Light-filled bespoke wood wall paneling, Italian travertine tiles, and modern indirect home lighting profile layout."
+    desc: "Seamless handle-less oak cabinetry, waterfall quartz counters, and floor-to-ceiling glazing framing the skyline."
   }
 ];
 
 export default function BeforeAfterSlider() {
-  const [activeTab, setActiveTab] = useState("bathroom");
+  const [activeTab, setActiveTab] = useState("living");
   const [sliderPosition, setSliderPosition] = useState(50); // percentage (0 - 100)
   const [isDragging, setIsDragging] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -150,7 +150,7 @@ export default function BeforeAfterSlider() {
         <div className="absolute top-4 right-4 z-20 bg-brand-gold-600/90 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-brand-gold-400/25">
           <span className="font-mono text-[10px] text-white uppercase tracking-widest font-semibold flex items-center gap-1.5">
             <span className="w-1.5 h-1.5 rounded-full bg-green-400"></span>
-            Tabeer Deluxe Spec
+            KOF Deluxe Spec
           </span>
         </div>
 

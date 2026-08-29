@@ -88,7 +88,7 @@ export default function Logo({ className = "", variant = "dark", showText = true
           <span
             className={`font-display text-[12px] sm:text-[13px] font-bold tracking-[0.24em] uppercase transition-colors duration-300 leading-none ${mainColor}`}
           >
-            Tabeer Al Tamayoz
+            KOF
           </span>
           <span
             className={`font-sans text-[7px] sm:text-[8px] font-medium tracking-[0.38em] uppercase opacity-90 transition-colors duration-300 mt-1.5 leading-none ${subColor}`}
