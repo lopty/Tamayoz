@@ -48,7 +48,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Brand Left Logo */}
         <a href="#hero" className="flex items-center gap-2 group">
-          <Logo variant="dark" showText={true} className="scale-90 sm:scale-100 origin-left" />
+          <Logo className="scale-90 sm:scale-100 origin-left" />
         </a>
 
         {/* Center Desktop Navigation */}

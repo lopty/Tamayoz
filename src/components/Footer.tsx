@@ -30,7 +30,7 @@ export default function Footer() {
           {/* Logo & Corporate Summary */}
           <div className="md:col-span-5 space-y-6">
             <div className="flex items-start">
-              <Logo variant="light" showText={true} className="scale-95 origin-left" />
+              <Logo className="scale-95 origin-left" />
             </div>
             <p className="text-xs sm:text-sm text-brand-sand-300 leading-relaxed max-w-sm">
               KOF Technical Services LLC is a premier licensed contractor based in Al Barsha, Dubai. We specialize in luxury residential makeovers, elegant German kitchen fitouts, bespoke joinery, and premium stonemasonry.
